@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-vampire-bg: #0a0a0a;
+  --color-vampire-surface: #111111;
+  --color-vampire-card: #161616;
+  --color-vampire-border: #222222;
+  --color-vampire-text: #e8e6e3;
+  --color-vampire-dim: #888888;
+  --color-vampire-accent: #6e56cf;
+  --color-vampire-glow: #9e8cfc;
+  --font-family-mono: 'JetBrains Mono', monospace;
+}
