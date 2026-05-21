@@ -1,17 +1,312 @@
 ---
-
+import Layout from '../layouts/baselayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <main class="max-w-[1200px] mx-auto p-4 md:p-8 min-h-screen flex flex-col justify-center selection:bg-[#7c5cfc]/30 selection:text-white">
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 w-full">
+      
+      <section class="md:col-span-8 bg-[#141414] border border-[#1f1f1f] rounded-2xl p-6 md:p-9 flex flex-col justify-between relative overflow-hidden group hover:border-[#2a2a2a] transition-all duration-300 shadow-2xl">
+        <div class="absolute inset-0 bg-radial-gradient from-[#7c5cfc]/5 to-transparent pointer-events-none"></div>
+        
+        <div>
+          <div class="flex items-center gap-2 text-[12px] tracking-[0.1em] text-[#7c5cfc] uppercase font-mono mb-4">
+            <span class="w-6 h-[4px] bg-[#7c5cfc]"></span> Software Engineer Student
+          </div>
+          <h1 class="font-sans font-extrabold text-3xl md:text-4xl tracking-tight text-[#e2ded9] leading-[1.1]">
+            Guillermo Vladimir Flores Báez<br/>
+            <!--<span class="text-[#7c5cfc]">Software Engineer Student</span> -->
+          </h1>
+          <p class="text-xs md:text-sm text-[#666] font-mono mt-4 leading-relaxed max-w-[520px]">
+			Estudiante de 9° semestre en la carrera de <span class="text-[#7c5cfc]">Ingeniería en Tecnología de Software</span> enfocado en desarrollo Backend (Java, C, C++) y gestión de bases de datos (SQL Server, MySQL). Cuento con bases técnicas sólidas, adaptabilidad a procesos estructurados y alta disposición para dominar nuevas tecnologías de desarrollo e infraestructura.
+		</p>
+        </div>
+
+        <div class="flex flex-wrap gap-1.5 mt-6 font-mono">
+          <span class="text-[10px] px-2.5 py-1 rounded-full border border-[#7c5cfc]/30 text-[#a78bfa] bg-[#7c5cfc]/5 tracking-wide font-medium">Backend Dev</span>
+          <span class="text-[10px] px-2.5 py-1 rounded-full border border-[#7c5cfc]/30 text-[#a78bfa] bg-[#7c5cfc]/5 tracking-wide font-medium">Infrastructure</span>
+		  <span class="text-[10px] px-2.5 py-1 rounded-full border border-[#2a2a2a] text-[#666] bg-transparent tracking-wide">DevOps</span>
+          <span class="text-[10px] px-2.5 py-1 rounded-full border border-[#2a2a2a] text-[#666] bg-transparent tracking-wide">Cybersecurity</span>
+          <span class="text-[10px] px-2.5 py-1 rounded-full border border-[#2a2a2a] text-[#666] bg-transparent tracking-wide">Automation</span>
+          <span class="text-[10px] px-2.5 py-1 rounded-full border border-[#2a2a2a] text-[#666] bg-transparent tracking-wide">AI</span>
+        </div>
+      </section>
+
+      <aside class="md:col-span-4 bg-[#141414] border border-[#1f1f1f] rounded-2xl p-6 flex flex-col justify-between hover:border-[#2a2a2a] transition-all duration-300 font-mono">
+        <div class="space-y-4">
+          <div>
+            <div class="text-[9px] tracking-widest text-[#666] uppercase">Estado</div>
+            <div class="text-sm text-[#e2ded9] font-medium flex items-center gap-2 mt-1">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-flex bg-[#22c55e] opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-[#22c55e] shadow-[0_0_8px_#22c55e]"></span>
+              </span>
+              Disponible
+            </div>
+          </div>
+          <div>
+            <div class="text-[9px] tracking-widest text-[#666] uppercase">Enfoque actual</div>
+            <div class="text-[11px] text-[#e2ded9] mt-1 leading-relaxed">
+              Backend Development · JAVA 
+            </div>
+          </div>
+          <div>
+            <div class="text-[9px] tracking-widest text-[#666] uppercase">Ubicación</div>
+            <div class="text-xs text-[#e2ded9] mt-1">Monterrey, Nuevo León</div>
+          </div>
+        </div>
+        <div class="mt-6 md:mt-0 px-3 py-2 bg-[#22c55e]/5 border border-[#22c55e]/15 rounded-lg text-[11px] text-[#22c55e] font-medium text-center">
+          ⬤ &nbsp;Abierto a oportunidades
+        </div>
+      </aside>
+
+      <section class="md:col-span-5 bg-[#141414] border border-[#1f1f1f] rounded-2xl p-6 hover:border-[#2a2a2a] transition-all duration-300 flex flex-col">
+        <div class="text-[9px] tracking-[0.15em] text-[#666] uppercase font-mono mb-4">Stack tecnológico</div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 font-mono flex-grow">
+          
+          <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#3b82f6] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">JAVA</div>
+              <div class="text-[9px] text-[#666]">Springboot + Hibernate + Angular</div>
+            </div>
+          </div>
+          
+          <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#f59e0b] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">C</div>
+              <div class="text-[9px] text-[#666]">Descripción pendiente</div>
+            </div>
+          </div>
+          
+          <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#22c55e] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">C++</div>
+              <div class="text-[9px] text-[#666]">Descripción pendiente</div>
+            </div>
+          </div>
+          
+          <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#06b6d4] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">JavaScript</div>
+              <div class="text-[9px] text-[#666]">Descripción pendiente</div>
+            </div>
+          </div>
+          
+          <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#f97316] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">Python</div>
+              <div class="text-[9px] text-[#666]">Descripción pendiente</div>
+            </div>
+          </div>
+          
+          <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#7c5cfc] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">Astro</div>
+              <div class="text-[9px] text-[#666]">Descripción pendiente</div>
+            </div>
+          </div>
+
+		  <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#22c55e] mb-2"></span>
+            <div> 
+              <div class="text-[11px] text-[#e2ded9] font-medium">SQL </div>
+              <div class="text-[9px] text-[#666]">MySQL · Microsoft SQL Server</div>
+            </div>
+          </div>
+
+		  <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#22c55e] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">Git/GitHub</div>
+              <div class="text-[9px] text-[#666]">Descripción pendiente</div>
+            </div>
+          </div>
+
+		  <div class="bg-[#181818] border border-[#1f1f1f] rounded-lg p-2.5 flex flex-col justify-between">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#22c55e] mb-2"></span>
+            <div>
+              <div class="text-[11px] text-[#e2ded9] font-medium">Linux</div>
+              <div class="text-[9px] text-[#666]">Admin · Servers</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="md:col-span-7 bg-[#141414] border border-[#1f1f1f] rounded-2xl p-6 hover:border-[#2a2a2a] transition-all duration-300">
+        <div class="text-[9px] tracking-[0.15em] text-[#666] uppercase font-mono mb-2">Proyectos destacados</div>
+        <div class="divide-y divide-[#1f1f1f] font-mono">
+          
+          <div class="py-3 flex gap-3 items-start group">
+            <span class="text-[10px] text-[#666] mt-0.5 min-w-[20px]">01</span>
+            <div class="flex-grow">
+              <h4 class="text-xs font-medium text-[#e2ded9] group-hover:text-[#7c5cfc] transition-colors">Portafolio</h4>
+              <p class="text-[10px] text-[#666] mt-1 leading-relaxed">Portfolio personal modular</p>
+              <div class="flex gap-1.5 mt-2">
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">Astro</span>
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">Tailwind</span>
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3 flex gap-3 items-start group">
+            <span class="text-[10px] text-[#666] mt-0.5 min-w-[20px]">02</span>
+            <div class="flex-grow">
+              <h4 class="text-xs font-medium text-[#e2ded9] group-hover:text-[#7c5cfc] transition-colors">Flavortown Jukebox API</h4>
+              <p class="text-[10px] text-[#666] mt-1 leading-relaxed">Backend estructurado en microservicios, persistencia relacional y pasarela de control síncrono.</p>
+              <div class="flex gap-1.5 mt-2">
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">Node.js</span>
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">PostgreSQL</span>
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3 pb-0 flex gap-3 items-start group">
+            <span class="text-[10px] text-[#666] mt-0.5 min-w-[20px]">03</span>
+            <div class="flex-grow">
+              <h4 class="text-xs font-medium text-[#e2ded9] group-hover:text-[#7c5cfc] transition-colors">Linux Infra Automation</h4>
+              <p class="text-[10px] text-[#666] mt-1 leading-relaxed">Scripts funcionales para el despliegue automático de servicios de monitorización de red.</p>
+              <div class="flex gap-1.5 mt-2">
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">Python</span>
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">Bash</span>
+                <span class="text-[9px] px-2 py-0.5 rounded-full bg-[#181818] border border-[#2a2a2a] text-[#666]">SysAdmin</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="md:col-span-4 bg-[#141414] border border-[#1f1f1f] rounded-2xl p-6 hover:border-[#2a2a2a] transition-all duration-300 flex flex-col justify-between font-mono">
+        <div class="text-[9px] tracking-[0.15em] text-[#666] uppercase mb-4">Competencias</div>
+        <div class="space-y-3.5">
+          
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-[10px]">
+              <span class="text-[#e2ded9]">Backend Dev</span>
+              <span class="text-[#666]">85%</span>
+            </div>
+            <div class="h-[3px] bg-[#2a2a2a] rounded-full overflow-hidden"> 
+              <div class="h-full bg-gradient-to-r from-[#7c5cfc] to-[#a78bfa] rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-[10px]">
+              <span class="text-[#e2ded9]">Linux / Servers</span>
+              <span class="text-[#666]">78%</span>
+            </div>
+            <div class="h-[3px] bg-[#2a2a2a] rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-[#7c5cfc] to-[#a78bfa] rounded-full" style="width: 78%"></div>
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-[10px]">
+              <span class="text-[#e2ded9]">CI/CD · DevOps</span>
+              <span class="text-[#666]">65%</span>
+            </div>
+            <div class="h-[3px] bg-[#2a2a2a] rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-[#7c5cfc] to-[#a78bfa] rounded-full" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-[10px]">
+              <span class="text-[#e2ded9]">Automation</span>
+              <span class="text-[#666]">70%</span>
+            </div>
+            <div class="h-[3px] bg-[#2a2a2a] rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-[#7c5cfc] to-[#a78bfa] rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="md:col-span-4 bg-[#0a0a0a] border border-[#1a1a1a] rounded-2xl p-5 hover:border-[#2a2a2a] transition-all duration-300 font-mono flex flex-col justify-between min-h-[180px]">
+        <div class="flex gap-1.5 items-center mb-4">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#ef4444]"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-[#f59e0b]"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-[#22c55e]"></span>
+          <span class="text-[10px] text-[#666] ml-2">~/rex</span>
+        </div>
+        <div class="text-[11px] space-y-1.5 leading-relaxed flex-grow">
+          <div>
+            <span class="text-[#7c5cfc]">❯ </span><span class="text-[#e2ded9]">whoami</span>
+          </div>
+          <div class="text-[#666] pl-3">vladdbaez</div>
+          <div>
+            <span class="text-[#7c5cfc]">❯ </span><span class="text-[#e2ded9]">PENDIENTE</span>
+          </div>
+          <div class="text-[#666] pl-3">backend · TECH · TECH · TECH</div>
+          <div>
+            <span class="text-[#7c5cfc]">❯ </span><span class="text-[#e2ded9]">git log -1 --oneline</span>
+          </div>
+          <div class="text-[#22c55e] pl-3">✓ feat: portfolio deployed to Pages</div>
+          <div class="flex items-center text-[#00FF66] font-mono">
+			<span class="font-bold">❯&nbsp;</span>
+			<span class="tracking-wide">Loading...</span>
+			<span class="w-1.5 h-3 bg-[#00FF66] ml-1 shadow-[0_0_8px_#00FF66] animate-[blink_1s_infinite]"></span>
+		</div>
+	</div>
+      </section>
+
+      <section class="md:col-span-4 bg-[#141414] border border-[#1f1f1f] rounded-2xl p-6 hover:border-[#2a2a2a] transition-all duration-300 font-mono flex flex-col justify-between">
+  <div class="text-[9px] tracking-[0.15em] text-[#666] uppercase mb-3">Contacto</div>
+  
+  <div class="text-[11px] space-y-2.5 flex-grow flex flex-col justify-center">
+    
+    <a href="https://github.com/vladdbaez" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-[#666] hover:text-[#e2ded9] transition-colors py-1 border-b border-[#1f1f1f] last:border-none group">
+      <span class="w-7 h-7 bg-[#181818] border border-[#2a2a2a] rounded flex items-center justify-center text-xs text-[#e2ded9] group-hover:border-[#7c5cfc]/50 group-hover:text-[#7c5cfc] transition-colors">
+        <i class="fab fa-github text-sm"></i>
+      </span>
+      Perfil de GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/itsrex/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-[#666] hover:text-[#e2ded9] transition-colors py-1 border-b border-[#1f1f1f] last:border-none group">
+      <span class="w-7 h-7 bg-[#181818] border border-[#2a2a2a] rounded flex items-center justify-center text-xs text-[#e2ded9] group-hover:border-[#7c5cfc]/50 group-hover:text-[#7c5cfc] transition-colors">
+        <i class="fab fa-linkedin-in text-sm"></i>
+      </span>
+      Perfil de LinkedIn
+    </a>
+
+    <a href="mailto:vladdbaez@gmail.com" target="_self" class="flex items-center gap-3 text-[#666] hover:text-[#e2ded9] transition-colors py-1 border-b border-[#1f1f1f] last:border-none group">
+		<span class="w-7 h-7 bg-[#181818] border border-[#2a2a2a] rounded flex items-center justify-center text-xs text-[#e2ded9] group-hover:border-[#7c5cfc]/50 group-hover:text-[#7c5cfc] transition-colors">
+			<i class="fas fa-envelope text-xs"></i>
+		</span>
+		<span class="font-mono">Correo Oficial</span>
+	</a>
+
+  </div>
+</section>
+
+      <footer class="md:col-span-12 bg-[#0f0f0f] border border-[#1f1f1f] rounded-2xl px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 shadow-inner">
+        <p class="text-xs italic text-[#666] font-medium text-center sm:text-left">
+          "Creamos<span class="text-[#7c5cfc] not-italic font-bold"> mentes de silicio</span> para responder preguntas que<span class="text-[#7c5cfc] not-italic font-bold"> aún no sabemos hacer</span>".
+        </p>
+        <span class="text-[9px] tracking-widest text-[#333] font-mono uppercase">
+          REX ENTERPRISE SYSTEMS· v1.0.0 · 2026
+        </span>
+      </footer>
+
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* Animación del cursor de la terminal incorporada */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+</style>
